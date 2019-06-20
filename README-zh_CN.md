@@ -110,7 +110,7 @@ shape.perimeter()
 ###### 4. 输出是什么？
 
 ```javascript
-;+true
++true;
 !'Lydia'
 ```
 
@@ -1040,10 +1040,10 @@ typeof sayHi()
 
 ```javascript
 0
-new Number(0)
-;('')
-;(' ')
-new Boolean(false)
+new Number(0);
+('')
+(' ')
+new Boolean(false);
 undefined
 ```
 
@@ -1078,7 +1078,7 @@ undefined
 ###### 36. 输出是什么？
 
 ```javascript
-console.log(typeof typeof 1)
+console.log(typeof typeof 1);
 ```
 
 - A: `"number"`
@@ -1102,9 +1102,9 @@ console.log(typeof typeof 1)
 ###### 37. 输出是什么？
 
 ```javascript
-const numbers = [1, 2, 3]
-numbers[10] = 11
-console.log(numbers)
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+console.log(numbers);
 ```
 
 - A: `[1, 2, 3, 7 x null, 11]`
@@ -1131,17 +1131,17 @@ console.log(numbers)
 ###### 38. 输出是什么？
 
 ```javascript
-;(() => {
-  let x, y
+(() => {
+  let x, y;
   try {
-    throw new Error()
+    throw new Error();
   } catch (x) {
-    ;(x = 1), (y = 2)
-    console.log(x)
+    (x = 1), (y = 2)
+    console.log(x);
   }
-  console.log(x)
-  console.log(y)
-})()
+  console.log(x);
+  console.log(y);
+})();
 ```
 
 - A: `1` `undefined` `2`
@@ -1189,12 +1189,12 @@ JavaScript 只有基本类型和对象。
 ###### 40. 输出是什么？
 
 ```javascript
-;[[0, 1], [2, 3]].reduce(
+[[0, 1], [2, 3]].reduce(
   (acc, cur) => {
     return acc.concat(cur)
   },
   [1, 2]
-)
+);
 ```
 
 - A: `[0, 1, 2, 3, 1, 2]`
@@ -1270,7 +1270,7 @@ setInterval(() => console.log('Hi'), 1000)
 ###### 43. 输出是什么？
 
 ```javascript
-;[...'Lydia']
+[...'Lydia'];
 ```
 
 - A: `["L", "y", "d", "i", "a"]`
